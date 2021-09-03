@@ -15,8 +15,8 @@ RUN sudo -u builder sh -c "cd ~ && echo /home/builder/key.rsa | abuild-keygen \
   && sudo cp ~/key.rsa.pub /etc/apk/keys \
   && git clone --depth 1 --branch master https://git.alpinelinux.org/aports \
   && cd aports/community/aria2 \
-  && curl -LJO https://gist.githubusercontent.com/adekmaulana/1b9549f11238f6ef489f322ef2c33ee8/raw/fbbb53d06976c25bcd280c545e3155dafdd9309d/APKBUILD > APKBUILD \
-  && abuild checksum && abuild -r"
+  && curl -LJO https://gist.githubusercontent.com/adekmaulana/1b9549f11238f6ef489f322ef2c33ee8/raw/b59a182380cf18c768a5edec96c46edee7dc532d/APKBUILD > APKBUILD \
+  && abuild -r"
 
 
 FROM alpine:latest
